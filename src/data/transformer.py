@@ -1,5 +1,5 @@
 import pandas as pd
-from scripts.load_data import load_dataset
+from src.data.loader import load_all_csv
 from datetime import datetime, timedelta
 
 def classify_tickets_by_week(df: pd.DataFrame) -> pd.DataFrame: #Función que define las semanas y clasifica los tickets dependiendo de la fecha entre la semana actual y la semana siguiente.

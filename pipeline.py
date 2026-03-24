@@ -1,10 +1,10 @@
-from scripts.load_data import load_dataset
-from scripts.transform_data import(
+from src.data.loader import load_dataset
+from src.data.transformer import(
     classify_tickets_by_week,
     classify_tickets_by_labels,
     filter_open_tickets
 )
-from scripts.calculate_metrics import calculate_weekly_metrics
+from src.metrics.workload import calculate_weekly_metrics
 
 
 df = load_dataset('data/raw/sample_jira_tickets.csv')
